@@ -9,7 +9,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0px 40px;
 }
 
 .App-link {
@@ -35,4 +36,36 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.quote {
+  font-family: cursive;
+  font-style: italic;
+  max-width: 720px;
+}
+
+.credit {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.polaroid {
+  background: white;
+  font-weight: bold;
+  color: #282c34;
+  text-align: center;
+  border: 12px solid white;
+  border-radius: 12px;
+  max-width: 30%;
+}
+
+.rank {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+
+img {
+  contain: content;
+  max-width: 100%;
+  height: auto;
 }
