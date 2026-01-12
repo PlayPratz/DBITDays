@@ -94,7 +94,7 @@ const QuoteDisplay: React.FC<{ quote: Quote; rank: number }> = (props) => (
     <span className="rank">{props.rank}</span>
     <p className="quote">"{props.quote.quote}"</p>
     <div className="polaroid">
-      <img src={`/photos/${props.quote.speaker.code}.jpg`} alt="" />
+      <img src={`./photos/${props.quote.speaker.code}.jpg`} alt="" />
       <span className="credit">{props.quote.speaker.name}</span>
     </div>
   </>
