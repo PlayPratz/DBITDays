@@ -46,8 +46,8 @@ const quotes: Quote[] = [
     speaker: Shravan,
   },
   {
-    quote: `Someone epic mom and elon musk is there altime attending our   presentation and creating noise like cat and a child
-    Try to check a participant named Eldon musk and epic mom is bling . Try a way to to debar them from our prenstation pls`,
+    quote:
+      "Someone epic mom and elon musk is there altime attending our presentation and creating noise like cat and a child Try to check a participant named Eldon musk and epic mom is bling . Try a way to to debar them from our prenstation pls",
     speaker: Sunantha,
   },
   {
@@ -80,7 +80,7 @@ const quotes: Quote[] = [
     speaker: Tayyab,
   },
   {
-    quote: "Two phases locking protocol has two phases",
+    quote: "Two phase locking protocol has two phases",
     speaker: Aruna,
   },
   {
