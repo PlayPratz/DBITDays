@@ -1,10 +1,13 @@
-import './App.css';
-import { QuoteSlide } from './quotes';
+import "./App.css";
+import { QuoteSlide } from "./quotes";
 
 function App() {
   return (
-    <div className="App-header">
-      <QuoteSlide/>
+    <div className="App">
+      <header className="header">Click for next</header>
+      <div className="Content">
+        <QuoteSlide />
+      </div>
     </div>
   );
 }

@@ -104,18 +104,29 @@ export const QuoteSlide: React.FC = () => {
   const [slide, setSlide] = React.useState(0);
 
   React.useEffect(() => {
-    const handlekeydown = (event: KeyboardEvent) => {
+    const goNext = () => setSlide((slide + 1) % quotes.length);
+    const goPrev = () => setSlide(slide - 1);
+
+    const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "ArrowLeft") {
         if (slide !== 0) {
-          setSlide(slide - 1);
+          goPrev();
         }
-      } else if (event.key === "ArrowRight") {
-        setSlide((slide + 1) % quotes.length);
+      } else if (event.key === "ArrowRight" || event.key === "space") {
+        goNext();
       }
     };
-    document.addEventListener("keydown", handlekeydown);
+
+    const handleClick = (event: MouseEvent) => {
+      goNext();
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("click", handleClick);
+
     return () => {
-      document.removeEventListener("keydown", handlekeydown);
+      document.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("click", handleClick);
     };
   }, [slide]);
 
